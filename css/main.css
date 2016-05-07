@@ -1,0 +1,121 @@
+html,body,p,div{margin:0px;padding:0px;}
+body{
+	font-size: 13px;
+	font-family: verdana;
+	overflow:hidden;
+}
+#bg{
+	transition:all 1000ms ease-in;
+	transform-origin:50% 20%;
+	transform:scale(1);
+	width:100%;
+	height:100%;
+	position:absolute;
+	background:url(../img/mainbg.jpg);
+}
+#bg:hover {
+	transition:all 1000ms  ease-out;
+	transform:scale(1.03);
+}
+#container{
+	min-width:400px;
+	min-height:400px;
+	position:absolute;
+	top:25%;
+	right:10%;
+	width:30%;
+	height:45%;
+	background:rgba(255,255,255,0.5);
+	border-radius:5px;
+	z-index: 2;
+}
+.clear{
+	clear:both;
+}
+#all{
+	width:100%;height:100%;
+}
+#all1{
+	width:100%;height:100%;
+	display: none;
+}
+#nav{
+	width:100%;
+	height:;
+}
+#register{
+	cursor: pointer;
+	color:#629CE2;
+	float:right;
+	margin-top:5%;
+	margin-right:10%;
+	font-weight:bold;
+	font-size:20px;
+}
+#login{
+	cursor: pointer;
+	color:#629CE2;
+	font-weight:bold;
+	float:left;
+	margin-top:5%;
+	margin-left:60%;
+	font-size:20px;
+	opacity: .5;
+}
+#registerform,#loginform{width:100%;height:100%;}
+#submit1,#submit{
+	margin-top:5%;
+	margin-left:8%;
+	width:82%;
+	height:10%;
+	background-color:#629CE2;
+	color:white;
+	font-weight:bold;
+	border:none;
+	border-radius:2px;
+}
+#registerform input[type="text"],#loginform input[type="text"],#loginform input[type="password"]{
+	width:80%;
+	margin-top:5%;
+	margin-left:8%;
+	padding-left:10px;
+	height:10%;
+	color:gray;
+	border:none;
+	border-radius:2px;
+}
+
+#bubble{
+	position:absolute;
+	right:560px;
+	width:270px;
+	height:60px;
+	background: white;
+	border-radius: 5px;
+}
+#warning{
+	display: inline-block;
+	float:left;
+	margin-top:13px;
+	margin-left:16px;
+	width:32px;
+	height:31px;
+	background: url(../img/error_bg.png) no-repeat;
+	background-position: -724px -9px;
+}
+#right_arr{
+	float:right;
+	margin-top:15px;
+	margin-right:-10px;
+	width:10px;
+	height:19px;
+	background: url(../img/error_bg.png) no-repeat;
+	background-position: 0px 0px;
+}
+#bubble span{
+	display: inline-block;
+	margin-left:10px;
+	font-size:15px;
+	line-height: 60px;
+	font-weight: bold;
+}
